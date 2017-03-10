@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/admin_layout"
+    android:layout_height="match_parent"
+    android:background="@color/back_front_color"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <LinearLayout
+            android:id="@+id/layout_admin_l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginRight="100dp"
+            >
+            <ImageView
+                android:id="@+id/imageView_admin_logo"
+                android:layout_width="43dp"
+                android:layout_height="58dp"
+                android:src="@drawable/pinup"  />
+
+            <TextView
+                android:id="@+id/textView_admin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView_main_logo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/dimen_align_10dp"
+                android:text="PinUp"
+
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/dimen_size_30sp"
+                android:textStyle="bold" />
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_admin_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_admin_l1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Welcome to PinUp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/dimen_size_20sp"
+            android:textStyle="bold"
+            android:fontFamily="Avenir-Medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="246dp"
+            android:text="All you resources, important links,\n emails,docs,notes,in,one place and\n  easy to create Pin."
+            android:textAlignment="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/dimen_size_20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/back_saperator_fent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="58dp"
+            android:layout_above="@+id/layout2_admin_welcome"
+            />
+
+
+            <Button
+                android:id="@+id/button_admin_registration"
+                android:layout_width="@dimen/dimen_align_60dp"
+                android:layout_height="17dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="23dp"
+                android:layout_marginLeft="76dp"
+                android:layout_alignParentBottom="true"
+
+                android:background="@color/back_front_color"
+                android:text="Register" />
+
+            <View
+                android:id="@+id/viewverticle"
+                android:layout_width="1.5dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="179dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/back_saperator_fent"
+
+                />
+
+
+            <Button
+                android:id="@+id/button_admin_signin"
+                android:layout_width="45dp"
+                android:layout_height="17dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="57.5dp"
+                android:layout_marginBottom="23dp"
+                android:layout_marginRight="74.5dp"
+                android:layout_alignParentBottom="true"
+              android:layout_toRightOf="@+id/viewverticle"
+                android:background="@color/back_front_color"
+                android:text="Signin" />
+
+    </RelativeLayout>
+</RelativeLayout>
